@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitZoom.CSharp.Plugins", "FitZoom.CSharp.Plugins.csproj", "{1284655E-0203-09D2-0F34-CA5A1C909B77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitZoom.CSharp", "FitZoom.CSharp.csproj", "{6F2C806A-1B03-539E-8DFF-479E38142927}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitZoom.CSharp.Editor", "FitZoom.CSharp.Editor.csproj", "{3C4E52A1-2BFA-E8D8-18BB-1EF85E94ACA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1284655E-0203-09D2-0F34-CA5A1C909B77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1284655E-0203-09D2-0F34-CA5A1C909B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1284655E-0203-09D2-0F34-CA5A1C909B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1284655E-0203-09D2-0F34-CA5A1C909B77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F2C806A-1B03-539E-8DFF-479E38142927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2C806A-1B03-539E-8DFF-479E38142927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2C806A-1B03-539E-8DFF-479E38142927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2C806A-1B03-539E-8DFF-479E38142927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4E52A1-2BFA-E8D8-18BB-1EF85E94ACA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4E52A1-2BFA-E8D8-18BB-1EF85E94ACA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4E52A1-2BFA-E8D8-18BB-1EF85E94ACA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4E52A1-2BFA-E8D8-18BB-1EF85E94ACA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
