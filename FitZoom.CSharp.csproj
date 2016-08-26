@@ -104,11 +104,8 @@
     <Compile Include="Assets\Script\XMLReader.cs" />
     <Compile Include="Assets\ScriptNeed\Button_1.cs" />
     <Compile Include="Assets\ScriptNeed\DashBoardUpdate.cs" />
-    <Compile Include="Assets\ScriptNeed\Demo_2.cs" />
-    <Compile Include="Assets\ScriptNeed\GUI_Popup.cs" />
     <Compile Include="Assets\ScriptNeed\GameOver.cs" />
     <Compile Include="Assets\ScriptNeed\GameStart.cs" />
-    <Compile Include="Assets\ScriptNeed\Twitter.cs" />
     <Compile Include="Assets\ScriptNeed\isPress.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
