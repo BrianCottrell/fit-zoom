@@ -270,10 +270,31 @@ public class Distance : MonoBehaviour {
         Target_Calories_Text.GetComponent<Text>().text = "Target for Today: " + Target_Calories + " C";
         Target_Time_Text.GetComponent<Text>().text = "Your Target Workout Time for Today:";
         Total_Time_Text.GetComponent<Text>().text = Target_Time_2.ToString() + " seconds";
+
+        string url = "http://nodejs-mongodb-example-fit-zoom.0ec9.hackathon.openshiftapps.com/pagecount?fitnessdata=";
+        WWW www = new WWW(url);
+        StartCoroutine(WaitForRequest(www));
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    IEnumerator WaitForRequest(WWW www)
+    {
+        yield return www;
+
+        // check for errors
+        if (www.error == null)
+        {
+            Alert_Panel.SetActive(true);
+            Alert_Text.GetComponent<Text>().text = www.text;
+            Debug.Log("WWW Ok!: " + www.data);
+        }
+        else
+        {
+            Debug.Log("WWW Error: " + www.error);
+        }
+    }
+
+    // Update is called once per frame
+    void Update () {
         mServer.Update();
         Velocity_Value = Mathf.Round(Distance_Source.GetComponent<VZController>().Current_Bike_State.Speed * 10);
         Distance_Value = Mathf.Round(Distance_Source.GetComponent<VZController>().Distance_show);
@@ -299,7 +320,7 @@ public class Distance : MonoBehaviour {
 //            Alert_Panel.SetActive(true);
         }
         Velocity.GetComponent<Text>().text = "Current Velocity: " + Velocity_Value.ToString() + " m/s";
-        Velocity_Bar.GetComponent<RectTransform>().sizeDelta = new Vector2(12 * Velocity_Value, 10f);
+        Velocity_Bar.GetComponent<RectTransform>().sizeDelta = new Vector2(Velocity_Value, 10f);
         if (Distance_Value < Target_Distance_2)
         {
             Distance_Bar.GetComponent<RectTransform>().sizeDelta = new Vector2(120 * (Distance_Value / Target_Distance_2), 10f);
