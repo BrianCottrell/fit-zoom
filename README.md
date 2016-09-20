@@ -37,16 +37,24 @@ VirZOOM bike and HTC Vive:
 Install the latest version of Unity and ensure that the bike and VR set are connected, then run theFitZoom.exe application on the github repository.
 
 HTC Vive Only:
+
 1. Download or clone the project from github https://github.com/BrianCottrell/fit-zoom and install the latest version of Unity.
+
 2. Open and run the project in Unity while wearing the headset either have hands on the keys and remember the controls or have another person control the keyboard. 
+
 3. When the application loads, hold the enter and backspace keys to dismiss the start screen.
+
 4. Navigate the application by using the spacebar to move forward and the "A" or "D" keys at the same time as the left or right arrows to turn.
 Use the arrow keys to look up, down, left, or right.
 
 Computer Only:
+
 1. Download or clone the project from github https://github.com/BrianCottrell/fit-zoom and install the latest version of Unity.
+
 2. Open and run the project in Unity.
+
 3. When the application loads, hold the enter and backspace keys to dismiss the start screen.
+
 4. Navigate the application by using the spacebar to move forward and the "A" or "D" keys at the same time as the left or right arrows to turn.
 Use the arrow keys to look up, down, left, or right.
 
